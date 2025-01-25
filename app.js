@@ -30,13 +30,3 @@ function moveSlider() {
 bullets.forEach((bullet) => {
   bullet.addEventListener("click", moveSlider);
 });
-
-document.querySelector("form").addEventListener("submit", function (event) {
-        var hcaptchaResponse = document.querySelector(
-          "[name='h-captcha-response']"
-        ).value;
-        if (!hcaptchaResponse) {
-          event.preventDefault();
-          alert("Please complete the hCaptcha.");
-        }
-      });
