@@ -24,11 +24,20 @@
               </div>
 
               <div class="actual-form">
-                <input
-                  type="hidden"
-                  name="access_key"
-                  value="de129882-f332-4e10-a64b-af978c7fbc69"
-                />
+                <!-- Required: Your Access Key -->
+                <input type="hidden" name="access_key" value="de129882-f332-4e10-a64b-af978c7fbc69" />
+
+                <!-- Optional: Email Subject -->
+                <input type="hidden" name="subject" value="New Team Registration" />
+
+                <!-- Optional: From Name -->
+                <input type="hidden" name="from_name" value="AGCT Website" />
+
+                <!-- Optional: Redirect URL -->
+                <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you" />
+
+                <!-- Optional: Botcheck to prevent spam -->
+                <input type="checkbox" name="botcheck" style="display: none;" />
 
                 <div class="input-wrap">
                   <input
@@ -99,7 +108,8 @@
                     src="https://i.imgur.com/pYcM0rs.png"
                     alt="Payment QR Code"
                     width="150"
-                    height="150"/>
+                    height="150"
+                  />
                   <div class="payment-methods">
                     <a href="upi://pay?pa=nishatiwari7290@oksbi&pn=Nisha%20Kumari&am=1000.00&cu=INR&aid=uGICAgICtw-vLZA">
                       <img src="https://i.imgur.com/aq2G9O5.png" alt="PhonePe" width="50" />
@@ -125,7 +135,8 @@
                       pattern="^[a-zA-Z0-9]{12}$"
                       class="input-field"
                       title="Transaction ID must be exactly 12 characters long and a mix of letters and numbers."
-                      required/>
+                      required
+                    />
                     <label>UPI Transaction ID</label>
                   </div>
                 </div>
@@ -137,35 +148,42 @@
                 </p>
               </div>
               <div id="video">
-          <iframe height= "231px" src="https://www.youtube.com/embed/yJrZEaxpdAk?si=H-MMb-_9b_W2Qraj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe
+                  height="231px"
+                  src="https://www.youtube.com/embed/yJrZEaxpdAk?si=H-MMb-_9b_W2Qraj"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </form>
-          </div>   
           </div>
-
-          <div class="carousel">
-            <div class="images-wrapper">
-              <img src="joy.png" class="image img-1 show" alt="" />
-              <img src="respect.png" class="image img-2" alt="" />
-              <img src="anguish.png" class="image img-3" alt="" />
+        </div>
+        <div class="carousel">
+          <div class="images-wrapper">
+            <img src="joy.png" class="image img-1 show" alt="" />
+            <img src="respect.png" class="image img-2" alt="" />
+            <img src="anguish.png" class="image img-3" alt="" />
+          </div>
+          <div class="text-slider">
+            <div class="text-wrap">
+              <div class="text-group">
+                <h2>Where Cricket Meets Glory</h2>
+                <h2>Unleash Your Passion</h2>
+                <h2>Together We Thrive</h2>
+              </div>
             </div>
-
-            <div class="text-slider">
-              <div class="text-wrap">
-                <div class="text-group">
-                  <h2>Where Cricket Meets Glory</h2>
-                  <h2>Unleash Your Passion</h2>
-                  <h2>Together We Thrive</h2>
-                </div>
-              </div>
-
-              <div class="bullets">
-                <span class="active" data-value="1"></span>
-                <span data-value="2"></span>
-                <span data-value="3"></span>
-              </div>
+            <div class="bullets">
+              <span class="active" data-value="1"></span>
+              <span data-value="2"></span>
+              <span data-value="3"></span>
+            </div>
+          </div>
         </div>
       </div>
     </main>
-          <script src="app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
