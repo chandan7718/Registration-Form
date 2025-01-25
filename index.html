@@ -13,82 +13,88 @@
         <div class="inner-box">
           <div class="forms-wrap">
             <form action="https://api.web3forms.com/submit" method="POST">
-              <div class="logo">
-                <img src="agct.png" alt="AGCT" />
-                <h4>AGCT</h4>
-              </div>
+  <div class="logo">
+    <img src="agct.png" alt="AGCT" />
+    <h4>AGCT</h4>
+  </div>
 
-              <div class="heading">
-                <h2>Register Your Team</h2>
-                <h6>Fill in the form below to register your team.</h6>
-              </div>
+  <div class="heading">
+    <h2>Register Your Team</h2>
+    <h6>Fill in the form below to register your team.</h6>
+  </div>
 
-              <div class="actual-form">
-                <div class="input-wrap">
-                  <input 
-                    type="hidden"
-                    name="access_key"
-                    value="de129882-f332-4e10-a64b-af978c7fbc69">
-                  <input
-                    type="text"
-                    minlength="2"
-                    maxlength="20"
-                    class="input-field"
-                    autocomplete="off"
-                    required
-                  />
-                  <label>Team Name (as in STUMPS)</label>
-                </div>
+  <div class="actual-form">
+    <div class="input-wrap">
+      <input 
+        type="hidden"
+        name="access_key"
+        value="de129882-f332-4e10-a64b-af978c7fbc69">
+      <input
+        type="text"
+        name="team_name"
+        minlength="2"
+        maxlength="20"
+        class="input-field"
+        autocomplete="off"
+        required
+      />
+      <label>Team Name (as in STUMPS)</label>
+    </div>
 
-                <div class="input-wrap">
-                  <input
-                    type="text"
-                    minlength="8"
-                    maxlength="8"
-                    class="input-field"
-                    autocomplete="off"
-                    required
-                  />
-                  <label>STUMPS Team Code</label>
-                </div>
+    <div class="input-wrap">
+      <input
+        type="text"
+        name="team_code"
+        minlength="8"
+        maxlength="8"
+        class="input-field"
+        autocomplete="off"
+        required
+      />
+      <label>STUMPS Team Code</label>
+    </div>
 
-                <div class="input-wrap">
-                  <input
-                    type="text"
-                    minlength="4"
-                    class="input-field"
-                    required
-                  />
-                  <label>Name</label>
-                </div>
+    <div class="input-wrap">
+      <input
+        type="text"
+        name="name"
+        minlength="4"
+        class="input-field"
+        required
+      />
+      <label>Name</label>
+    </div>
 
-                <div class="input-wrap">
-                  <input
-                    type="number"
-                    minlength="10"
-                    maxlength="10"
-                    class="input-field"
-                    required
-                  />
-                  <label>Phone No.</label>
-                </div>
+    <div class="input-wrap">
+      <input
+        type="text"
+        name="phone"
+        pattern="^\d{10}$"
+        class="input-field"
+        title="Phone number must be exactly 10 digits."
+        required
+      />
+      <label>Phone No.</label>
+    </div>
 
-                <div class="input-wrap">
-                  <input
-                    type="email"
-                    minlength="4"
-                    class="input-field"
-                    required
-                  />
-                  <label>E-mail</label>
-                </div>
-                <button class="button" type="submit">Next</button>
-                <p class="text">
-                  By registering, I agree to the
-                  <a href="#">Terms & Conditions</a> and
-                  <a href="#">Privacy Policy</a>
-                </p>
-              </div>
+    <div class="input-wrap">
+      <input
+        type="email"
+        name="email"
+        pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"
+        class="input-field"
+        title="Email must be a valid @gmail.com address."
+        required
+      />
+      <label>E-mail</label>
+    </div>
+    <button class="button" type="submit">Next</button>
+    <p class="text">
+      By registering, I agree to the
+      <a href="#">Terms & Conditions</a> and
+      <a href="#">Privacy Policy</a>
+    </p>
+  </div>
             </form>
           </div>
           
