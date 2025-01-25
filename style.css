@@ -44,8 +44,8 @@ main {
 
 .inner-box {
   position: absolute;
-  width: calc(100% - 4.1rem);
-  height: calc(100% - 4.1rem);
+  width: 100vh;
+  height: calc(100% - 3.1rem);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -54,7 +54,7 @@ main {
 .forms-wrap {
   position: absolute;
   height: 100%;
-  width: 45%;
+  width: 100%;
   top: 0;
   left: 0;
   display: grid;
@@ -74,11 +74,6 @@ form {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   transition: opacity 0.02s 0.4s;
-}
-
-form.sign-up-form {
-  opacity: 0;
-  pointer-events: none;
 }
 
 .logo {
@@ -120,7 +115,7 @@ form.sign-up-form {
 }
 
 .input-field {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   background: none;
@@ -132,6 +127,7 @@ form.sign-up-form {
   color: #fff;
   transition: 0.4s;
 }
+
 
 label {
   position: absolute;
@@ -187,7 +183,7 @@ label {
 .carousel {
   position: absolute;
   height: 100%;
-  width: 55%;
+  width: 40%;
   left: 45%;
   top: 0;
   background-color: #310075;
@@ -371,6 +367,99 @@ label {
   form {
     padding: 1rem 2rem 1.5rem;
   }
+}
+
+.text a {
+  color: #ff00aa;
+  text-decoration: none;
+}
+
+.payment-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #222;
+  border-radius: 1rem;
+  text-align: center;
+  color: #bbb;
+}
+
+.payment-section h3 {
+  font-family: ind;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ff00aa;
+}
+
+.payment-section img {
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.payment-methods a img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.payment-methods a img:hover {
+  transform: scale(1.2);
+}
+
+.payment-section p {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.payment-section .input-wrap {
+  margin-top: 1rem;
+}
+.input-wrap {
+  position: relative;
+  height: 37px;
+  margin-bottom: 2rem;
+}
+
+.hcaptcha {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hcaptcha iframe {
+  border-radius: 0.8rem;
+}
+
+.button {
+  display: inline-block;
+  width: 100%;
+  height: 43px;
+  font-family: cwc;
+  background-color: #fff;
+  color: #121212;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #ff0aaa;
+}
+
+.text {
+  color: #bbb;
+  font-size: 0.7rem;
 }
 
 .text a {
