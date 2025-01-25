@@ -122,18 +122,14 @@
                   <div class="input-wrap">
                     <input
                       type="text"
-                  name="upi_transaction_id"
-                      pattern="^\d{12}$"
+                      name="upi_transaction_id"
+                      pattern="^[a-zA-Z0-9]{12}$"
                       class="input-field"
-                      title="Transaction ID must be exactly 12 digits."
-                      required
-                    />
+                      title="Transaction ID must be exactly 12 characters long and a mix of letters and numbers."
+                      required/>
                     <label>UPI Transaction ID</label>
                   </div>
                 </div>
-
-                <!-- hCaptcha Integration -->
-                <div class="h-captcha" data-captcha="true"></div>
                 <button class="button" type="submit">Register</button>
                 <p class="text">
                   By registering, I agree to the
@@ -172,6 +168,5 @@
       </div>
     </main>
           <script src="app.js"></script>
-    <script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
 </html>
