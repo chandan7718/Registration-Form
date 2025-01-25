@@ -427,17 +427,6 @@ label {
   margin-bottom: 2rem;
 }
 
-.hcaptcha {
-  margin: 1rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hcaptcha iframe {
-  border-radius: 0.8rem;
-}
-
 .button {
   display: inline-block;
   width: 100%;
